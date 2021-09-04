@@ -1,0 +1,14 @@
+class bcolors:  # ESTE BLOQUE DEFINE LOS COLORES
+    MORADO = '\033[95m'
+    BLUE = '\033[94m'
+    CYAN = '\033[96m'
+    GREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    ENDC = '\033[0m'
+
+
+#PARA IMPIMIR DE COLORES SE HACE ASÍ, PARA CAMBIAR COLOR CAMBIAS EL DONDE DICE MORADO, EL ULTIMO ES PARA QUE SE REINCIE Y NO IMPRIMA MORADO DE AHÍ EN ADELANTE
+#print(f"{bcolors.MORADO}Warning: No active frommets remain. Continue?{bcolors.ENDC}")
