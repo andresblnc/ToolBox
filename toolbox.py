@@ -1,6 +1,6 @@
 import time
-
-
+from tqdm import tqdm
+from time import sleep
 
 #PARA IMPIMIR DE COLORES SE HACE ASÍ, PARA CAMBIAR COLOR CAMBIAS EL DONDE DICE MORADO, EL ULTIMO ES PARA QUE SE REINCIE Y NO IMPRIMA MORADO DE AHÍ EN ADELANTE
 #print(f"{bcolors.MORADO}Warning: No active frommets remain. Continue?{bcolors.ENDC}")
@@ -45,4 +45,7 @@ def welcome():  #FUNCIÓN DE BIENVENIDA
     time.sleep(0.2)
     print(f"{bcolors.FAIL}\__/     \__\________\________\______/ \______/\__|     \__\________|")
 
-
+welcome()
+print(" ")
+for i in tqdm(range(100), desc=""):
+    sleep(0.05)
