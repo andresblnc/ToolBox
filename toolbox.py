@@ -43,6 +43,4 @@ def welcome():  #FUNCIÓN DE BIENVENIDA
     time.sleep(0.2)
     print(f"{bcolors.MORADO}$$  /   \$$ $$$$$$$$\$$$$$$$$\$$$$$$  |$$$$$$  $$ | \_/ $$ $$$$$$$$\ ")
     time.sleep(0.2)
-    print(f"{bcolors.FAIL}\__/     \__\________\________\______/ \______/\__|     \__\________|")
-
-
+    print(f"{bcolors.FAIL}\__/     \__\________\________\______/ \______/\__|     \__\________|{bcolors.ENDC}")
