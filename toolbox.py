@@ -64,18 +64,48 @@ def welcome():  #FUNCIÓN DE BIENVENIDA
     print("{: <20s}".format("3- Opción aún no disponible",end=""))
     print("{: >20s}".format("4- Opción aún no disponible"))
 
+
+#Aquí va todo lo que tenemos que hacer para las tablas de verdad.
 def tablas():
     print(f"{bcolors.CYAN}")
-    print("Perfecto!, para empezar, porqué no nos dices cuantas variables vas a utilizar? (Mínimo 1 & Máximo 4)")
+    print("Perfecto!, para empezar, porqué no nos dices cuantas variables vas a utilizar?")
+    print("Puedes usar todas las letras menos la letra v")
     num_var = int(input(">"))
+    variables = []
+    #Pregunta por las variables y las guarda
+    for i in range(1,num_var+1):
+        print(f"Escribe la variable {i}:")
+        var = input(">")
+        variables.append(var)
+
     print()
-    print("Las letras que utiliza el programa son las siguientes ( p q r s )")
     print("Los signos que utiliza el programa son:", end="")
     print()
-    signos = [["PARENTESIS","()"],["AND","&"],["OR","||"],["NOT","!"],["XOR","%"]]
+    signos = [["PARENTESIS","()"],["AND","&"],["OR","|"],["NOT","!"],["XOR","+"],["IMPLICACIÓN",">"],["BICONDICIONAL","*"]]
     print(tabulate(signos))
     print()
 
+    #Pregunta por el número de pasos del problema
+    print("Perfecto!, cuántos pasos tiene tú problema?")
+    print("Por ejemplo, el problema (p&q>r) tendría dos pasos.")
+    print("El primer paso sería  p&q  y el segundo sería  (p&q)>r")
+    pasos = int(input(">"))
+    print()
+
+    #Explica como dividir el problema en pasos
+    print("Perfecto! Ahora dinos cada uno de tus pasos por separado.")
+    print("El último paso debe de ser el problema completo.")
+    print(tabulate(signos))
+    partes = []
+    #Recibe el problema por partes
+    for i in range(1,pasos+1):
+        print(f"Escribe el paso {i}:")
+        pieza = input(">")
+        partes.append(pieza)
+    
+
+
+#MENÚ
 welcome()
 print()
 print("Qué quieres hacer?")
