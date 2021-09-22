@@ -80,8 +80,8 @@ def tablas():
 
     def condicional(exp):
         if "=>" in exp:
-            init= exp[exp.index("=")-1]
-            final= exp[exp.index(">")+1]
+            init = exp[exp.index("=")-1]
+            final = exp[exp.index(">")+1]
             return "(!"+init+"|"+final+")"
         else:
             return exp
@@ -145,21 +145,21 @@ def tablas():
         if par_count > 1 : 
             partes_i = partes[i]
             partes[i] = partes_i[1:]
-            #las detectamos y ponemos como una exppartesion nueva
+            #las detectamos y ponemos como una expresion nueva
             sub_partes = re.findall(r'\(.*?\)', partes[i]) 
             partes = partes + list(sub_partes)
         i+=1
         par_count = 0
     partes.append(str(argumento_log))
-    imp_partes=partes[:]
+    imp_partes = partes[:]
 
     ##PROCESO DE BICONDICIONAL
     i = 0
     for exp in partes:
         if "<=>" in exp:
             #delimitamos de donde a donde tomar
-            init= exp[exp.index("<=>")-1]
-            final= exp[exp.index("<=>")+3]
+            init = exp[exp.index("<=>")-1]
+            final = exp[exp.index("<=>")+3]
             #Buscamos por más partes de nuevo usando parentesis
             if init==")" :
                 exp_sub = exp[:exp.index("<")]
@@ -173,6 +173,7 @@ def tablas():
             new_exp = "(!"+init+"|"+final+")&(!"+final+"|"+init+")"
             partes[i] = new_exp
         i+=1
+
 
     ##PROCESO DE CONDICIONAL
     i = 0
@@ -204,7 +205,7 @@ def tablas():
             ##VOLVEMOS A CAMBIAR LA EXPRESION PARA PYTHON
             argumento_log = argumento_log.replace("&", " and ")
             argumento_log = argumento_log.replace("|", " or " )  
-            argumento_log = argumento_log.replace("!", " not " )
+            argumento_log = argumento_log.replace("!", " not ")
             
             #SE EVALÚA Y SE ESCRIBE
             resultado = str(eval(argumento_log))
@@ -220,7 +221,7 @@ def tablas():
     print(f"{bcolors.BOLD}")
 
     for row in table:
-        fila=""
+        fila = ""
         i=0
         for item in row:
             space = len(str(lista_variables[i]))

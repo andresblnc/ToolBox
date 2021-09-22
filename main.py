@@ -12,6 +12,8 @@ while True:
 
     if resp == 1:
         tablas()
+        print()
+        input("Escribe enter para continuar.")
 
     if resp == 2:
         print("Oh, aún no hemos trabajado sobre esa opción. Vuelve pronto.")
