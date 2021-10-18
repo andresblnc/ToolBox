@@ -6,7 +6,7 @@ print("Qué quieres hacer?")
 resp = int(input(">"))
 
 while True:
-    while resp < 1 or resp > 4:
+    while resp < 1 or resp > 5:
         print("Respuesta no disponible, intenta de nuevo")
         resp = int(input(">"))
 
@@ -23,6 +23,11 @@ while True:
 
     if resp == 4:
         print("Oh, aún no hemos trabajado sobre esa opción. Vuelve pronto.")
+
+    if resp == 5:
+        print("Gracias por utilizar nuestro programa. :)")
+        input("Presiona enter para salir")
+        break
 
 
     menu()
