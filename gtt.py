@@ -5,7 +5,7 @@ from tabulate import tabulate
 
 
 
-#PARA IMPIMIR DE COLOpartes SE HACE ASÍ, PARA CAMBIAR COLOR CAMBIAS EL DONDE DICE MORADO, EL ULTIMO ES PARA QUE SE REINCIE Y NO IMPRIMA MORADO DE AHÍ EN ADELANTE
+#PARA IMPIMIR DE COLORES SE HACE ASÍ, PARA CAMBIAR COLOR CAMBIAS EL DONDE DICE MORADO, EL ULTIMO ES PARA QUE SE REINCIE Y NO IMPRIMA MORADO DE AHÍ EN ADELANTE
 #print(f"{bcolors.MORADO}Warning: No active frommets remain. Continue?{bcolors.ENDC}")
 
 
@@ -73,7 +73,6 @@ def welcome():
 
     menu()
 
-
 #Aquí va todo lo que tenemos que hacer para las tablas de verdad.
 def tablas():
     print(f"{bcolors.CYAN}")
@@ -96,12 +95,12 @@ def tablas():
         return exp_sub
 
     lista_variables 	= []
-    table 			= []
-    table_row 		= []
-    par_count 		= 0
-    space 			= 0
+    table 			    = []
+    table_row 		    = []
+    par_count 		    = 0
+    space 			    = 0
 
-    variables = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    variables = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
     print("GENERADOR DE TABLAS DE VERDAD")
     signos = [["PARENTESIS","()"],["AND","&"],["OR","|"],["NOT","!"],["IMPLICACIÓN","=>"],["BICONDICIONAL","<=>"]]
