@@ -14,7 +14,7 @@ def menu():
     print(f"{bcolors.ENDC}")
     print("{: ^40s}".format("MENÚ PRINCIPAL"))
     print("{: <20s}".format("1- Generador de Tablas de Verdad",end=""))
-    print("{: <20s}".format("2- Opción aún no disponible"))
+    print("{: <20s}".format("2- Operaciones con conjuntos"))
     print("{: <20s}".format("3- Opción aún no disponible",end=""))
     print("{: <20s}".format("4- Opción aún no disponible"))
     print("{: <20s}".format("5- Salir"))
@@ -228,3 +228,6 @@ def tablas():
             fila = fila + space_print(item, space)+"\t"
             i+=1
         print(fila)
+
+def operaciones():
+    print()
