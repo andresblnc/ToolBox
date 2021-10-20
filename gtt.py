@@ -228,6 +228,3 @@ def tablas():
             fila = fila + space_print(item, space)+"\t"
             i+=1
         print(fila)
-
-def operaciones():
-    print()

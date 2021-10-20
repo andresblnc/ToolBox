@@ -17,7 +17,8 @@ while True:
         input("Escribe enter para continuar.")
 
     if resp == 2:
-        operaciones()
+        print(f"{bcolors.GREEN}")
+        conjuntos()
         print()
         input("Escribe enter para continuar.")
 
