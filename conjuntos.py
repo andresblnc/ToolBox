@@ -106,8 +106,6 @@ def dif():
     else:
         print("OK!")
         print()
-        
-
 
 def dif_sim():
     print("Perfecto, que conjuntos quieres utilizar?")
@@ -154,13 +152,67 @@ def dif_sim():
     print()
     print(f"La respuesta es: {helper}")
     print()
+    print("Presiona Enter para continuar")
+    input()
 
 def union():
-    print("Entro")
+    print("Perfecto, que conjuntos quieres utilizar?")
+    print("Te recuerdo tus conjuntos.")
+    print(f"A = {A}")
+    print(f"B = {B}")
+    print(f"C = {C}")
+    print(f"U = {U}")
+    print()
+    conj1 = set(A)
+    conj2 = set(B)
+    conj3 = set(C)
+    print("Escribe de esta manera A|B")
+    response = input(">")
+    if response == "A|B":
+        print("La respuesta es:", sorted(conj1 | conj2))
+    elif response == "B|A":
+        print("La respuesta es:", sorted(conj2 | conj1))
+    elif response == "A|C":
+        print("La respuesta es:", sorted(conj1 | conj3))
+    elif response == "C|A":
+        print("La respuesta  es:", sorted(conj3 | conj1))
+    elif response == "B|C":
+        print("La respuesta es:", sorted(conj2 | conj3))
+    elif response == "C|B":
+        print("La respuesta es:", sorted(conj3 | conj2))
+    print()
+    print("Presiona Enter para continuar")
+    input()
     pass
 
 def interseccion():
-    print("Entro")
+    print("Perfecto, que conjuntos quieres utilizar?")
+    print("Te recuerdo tus conjuntos.")
+    print(f"A = {A}")
+    print(f"B = {B}")
+    print(f"C = {C}")
+    print(f"U = {U}")
+    print()
+    conj1 = set(A)
+    conj2 = set(B)
+    conj3 = set(C)
+    print("Escribe de esta manera A&B")
+    response = input(">")
+    if response == "A&B":
+        print("La respuesta es:", sorted(conj1 & conj2))
+    elif response == "B&A":
+        print("La respuesta es:", sorted(conj2 & conj1))
+    elif response == "A&C":
+        print("La respuesta es:", sorted(conj1 & conj3))
+    elif response == "C&A":
+        print("La respuesta  es:", sorted(conj3 & conj1))
+    elif response == "B&C":
+        print("La respuesta es:", sorted(conj2 & conj3))
+    elif response == "C&B":
+        print("La respuesta es:", sorted(conj3 & conj2))
+    print()
+    print("Presiona Enter para continuar")
+    input()
     pass
 
 
