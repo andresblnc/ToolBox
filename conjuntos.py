@@ -23,7 +23,7 @@ def dif():
     print(f"C = {C}")
     print(f"U = {U}")
     print()
-    print("Escribe de esta manera A - B")
+    print("Escribe de esta manera A-B")
     response = input(">")
     response = response.strip().upper()
     if response[0] == "A":
@@ -53,8 +53,10 @@ def dif():
     
     print()
     print(f"La respuesta es: {helper}")
+    print()
     print("Quieres hacer otra diferencia usando esa respuesta?")
     again = input("y/n ->")
+    print()
 
     if again.lower() == "y":
         print("Perfecto, que conjuntos quieres utilizar?")
@@ -65,7 +67,7 @@ def dif():
         print(f"U = {U}")
         print(f"N = {helper}")
         print()
-        print("Escribe de esta manera A - B")
+        print("Escribe de esta manera A-B")
         print("Donde quieras usar la respuesta anterior usa N")
         response = input(">")
         response = response.strip().upper()
@@ -98,16 +100,60 @@ def dif():
         else:
             new.append(value)
         
-        print(f"{bcolors.ENDC}")
+        print("")
         print(f"La respuesta es: {new}")
+        print()
     else:
         print("OK!")
+        print()
         
 
 
 def dif_sim():
-    print("Entro")
-    pass
+    print("Perfecto, que conjuntos quieres utilizar?")
+    print("Te recuerdo tus conjuntos.")
+    print(f"A = {A}")
+    print(f"B = {B}")
+    print(f"C = {C}")
+    print(f"U = {U}")
+    print()
+    print("Escribe de esta manera A^B")
+    response = input(">")
+    response = response.strip().upper()
+    if response[0] == "A":
+        conj_1 = A
+    if response[0] == "B":
+        conj_1 = B
+    if response[0] == "C":
+        conj_1 = C
+    if response[0] == "U":
+        conj_1 = U
+
+    if response[2] == "A":
+        conj_2 = A
+    if response[2] == "B":
+        conj_2 = B
+    if response[2] == "C":
+        conj_2 = C
+    if response[2] == "U":
+        conj_2 = U
+    
+    helper = []
+    for value in conj_1:
+        if value in conj_2:
+            pass
+        else:
+            helper.append(value)
+    
+    for value in conj_2:
+        if value in conj_1:
+            pass
+        else:
+            helper.append(value)
+    
+    print()
+    print(f"La respuesta es: {helper}")
+    print()
 
 def union():
     print("Entro")
