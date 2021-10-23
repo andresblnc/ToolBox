@@ -6,6 +6,7 @@ print()
 print("Qué quieres hacer?")
 resp = int(input(">"))
 
+
 while True:
     while resp < 1 or resp > 5:
         print("Respuesta no disponible, intenta de nuevo")
