@@ -181,8 +181,10 @@ def union():
     elif response == "C|B":
         print("La respuesta es:", sorted(conj3 | conj2))
     print()
-    print("Presiona Enter para continuar")
+    print("Presiona Enter para volver al menu de los conjuntos")
     input()
+    print("\n"*100)
+
     pass
 
 def interseccion():
@@ -211,10 +213,10 @@ def interseccion():
     elif response == "C&B":
         print("La respuesta es:", sorted(conj3 & conj2))
     print()
-    print("Presiona Enter para continuar")
+    print("Presiona Enter para volver al menu de los conjuntos")
     input()
+    print("\n" * 100)
     pass
-
 
 def crear_conjuntos():
     #Adquirimos conjuntos
@@ -306,4 +308,6 @@ def conjuntos():
             dif_sim()
 
         if op == 5:
-            break
+            input("Escribe enter para continuar.")
+            print("\n"*100)
+        break

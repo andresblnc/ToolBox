@@ -21,7 +21,6 @@ while True:
         print(f"{bcolors.GREEN}")
         conjuntos()
         print()
-        input("Escribe enter para continuar.")
 
     if resp == 3:
         print("Oh, aún no hemos trabajado sobre esa opción. Vuelve pronto.")
