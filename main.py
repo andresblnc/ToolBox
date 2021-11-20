@@ -1,5 +1,7 @@
 from gtt import *
 from conjuntos import *
+from succ import *
+
 
 welcome()
 print()
@@ -20,10 +22,12 @@ while True:
     if resp == 2:
         print(f"{bcolors.GREEN}")
         conjuntos()
-        print()
+        print(f"{bcolors.ENDC}")
 
     if resp == 3:
-        print("Oh, aún no hemos trabajado sobre esa opción. Vuelve pronto.")
+        print(f"{bcolors.MORADO}")
+        sucesiones()
+        print(f"{bcolors.ENDC}")
 
     if resp == 4:
         print("Oh, aún no hemos trabajado sobre esa opción. Vuelve pronto.")
