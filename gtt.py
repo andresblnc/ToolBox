@@ -14,9 +14,9 @@ def menu():
     print(f"{bcolors.ENDC}")
     print("{: ^40s}".format("MENÚ PRINCIPAL"))
     print("{: <20s}".format("1- Generador de Tablas de Verdad",end=""))
-    print("{: <20s}".format("2- Operaciones con conjuntos"))
+    print("{: <20s}".format("2- Operaciones con conjuntos",end=""))
     print("{: <20s}".format("3- Sucesiones",end=""))
-    print("{: <20s}".format("4- Opción aún no disponible"))
+    print("{: <20s}".format("4- Relaciones",end=""))
     print("{: <20s}".format("5- Salir"))
     print()
 

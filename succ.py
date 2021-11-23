@@ -20,3 +20,7 @@ def sucesiones():
 
     print("Suma de elementos:", suma)
     print("Multiplicación total:", mult)
+    print()
+    print("Presiona Enter para volver al menu principal")
+    input()
+    print("\n" * 5)
