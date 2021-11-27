@@ -1,7 +1,7 @@
 from gtt import *
 from conjuntos import *
 from succ import *
-
+from relac import *
 
 welcome()
 print()
@@ -30,7 +30,9 @@ while True:
         print(f"{bcolors.ENDC}")
 
     if resp == 4:
-        print("Oh, aún no hemos trabajado sobre esa opción. Vuelve pronto.")
+        print(f"{bcolors.CYAN}")
+        relaciones()
+        print(f"{bcolors.ENDC}")
 
     if resp == 5:
         print("Gracias por utilizar nuestro programa. :)")
