@@ -30,7 +30,7 @@ while True:
         print(f"{bcolors.ENDC}")
 
     if resp == 4:
-        print(f"{bcolors.CYAN}")
+        print(f"{bcolors.BLUE}")
         relaciones()
         print(f"{bcolors.ENDC}")
 
