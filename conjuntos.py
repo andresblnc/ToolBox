@@ -183,7 +183,7 @@ def union():
     print()
     print("Presiona Enter para volver al menu de los conjuntos")
     input()
-    print("\n"*5)
+    print("\n"*20)
 
 def interseccion():
     print("Perfecto, que conjuntos quieres utilizar?")
@@ -213,7 +213,7 @@ def interseccion():
     print()
     print("Presiona Enter para volver al menu de los conjuntos")
     input()
-    print("\n" * 5)
+    print("\n" * 20)
 
 def crear_conjuntos():
     #Adquirimos conjuntos
@@ -306,5 +306,5 @@ def conjuntos():
 
         if op == 5:
             input("Escribe enter para continuar.")
-            print("\n"*5)
+            print("\n"*20)
             break

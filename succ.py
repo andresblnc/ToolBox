@@ -23,4 +23,4 @@ def sucesiones():
     print()
     print("Presiona Enter para volver al menu principal")
     input()
-    print("\n" * 5)
+    print("\n" * 20)

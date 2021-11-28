@@ -16,7 +16,7 @@ def relaciones():
             Relacion_raw = list(map(str,Relacion_raw.split(',')))
             print(Relacion_raw)
             RELACION.append(tuple(Relacion_raw))
-    RELACION.pop(len(RELACION)-1)#Quitamos el vacio
+    # RELACION.pop(len(RELACION)-1)#Quitamos el vacio
 
 
     print("\nMuy bien! Estos son tus datos:")
@@ -128,3 +128,7 @@ def relaciones():
         print("Los valores son una función")
     else:
         print("Los valores no son una función")
+
+    print("Presiona Enter para volver al menú principal")
+    input()
+    print("\n" * 20)
