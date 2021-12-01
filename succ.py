@@ -1,5 +1,5 @@
 def sucesiones():
-    print("Muy bien empecemos con las suceciones!")
+    print("Muy bien empecemos con las sucesiones!")
     print("Escribe la formula que quieres trabajar en terminos de k.")
 
     formula = input("Fórmula(k): ")
